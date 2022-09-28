@@ -167,3 +167,10 @@ def main():
     number_crunch()
   
 main()
+
+'''To do: 
+Return a total amount paid at end , including added interest at end of : min/max payment sechedules
+Use PyGui/ another module to create a GUI using this program for logic.
+Replicate project using classes.
+Create a pretty website using HTML/CSS/JS and port this over.
+Create a site using flask/django and port this over.'''
