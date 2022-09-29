@@ -155,7 +155,7 @@ def number_crunch():
     # Given the mandatory+optional spending in expenses, calculate left over cash
     max_extra_cash = income_info - expense_info
     print(f'\nBased on a monthly net income of ${income_info:,.2f} and total monthly expenses of ${expense_info:,.2f}, \nyou have ~${max_extra_cash:,.2f} left as surplus cash per month.')
-    if loan_term_mo > difference: # If the difference from today to deadline is within loan terms, use that diff as var.
+    if loan_term_mo > months_left: # If the difference from today to deadline is within loan terms, use that diff as var.
         if annual_interest == 0: # If no interest
             min_payment = npf.pmt(annual_interest/12, 
                                 months_left, debt_principal)*-1
